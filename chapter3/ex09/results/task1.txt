@@ -3,10 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Program outputs correct values when user inputs 35 and 100
 Reason: 135 and 67.5 were found in the program's output.None
-Timestamp: 2026-09-17 21:26:18.846747
+Timestamp: 2026-09-17 21:26:40.758738
 
 Status: PASSED!
 Check: 2
 Test: Program outputs correct values when user inputs 2.5, 7, and 12.5
 Reason: 135 and 67.5 were found in the program's output.None
-Timestamp: 2026-09-17 21:26:18.863594
+Timestamp: 2026-09-17 21:26:40.773877
