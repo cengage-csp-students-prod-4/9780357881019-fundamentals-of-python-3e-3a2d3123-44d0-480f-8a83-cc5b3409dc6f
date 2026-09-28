@@ -3,13 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Program outputs correct values when user inputs message and distance of 2
 Reason: 'cdefgh' was found in the program's output.None
-Timestamp: 2026-09-28 01:53:38.192144
+Timestamp: 2026-09-28 01:56:35.930241
 
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: Program outputs correct values when user inputs message and distance of 127
-Reason: Unable to find '['`abcde']' in the program's output.
-Enter a message: Enter the distance value: "#$%&'
-.
-Error : AssertionError - Unable to find `abcde in the program's output.
-Timestamp: 2026-09-28 01:53:38.207012
+Reason: '`abcde' was found in the program's output.None
+Timestamp: 2026-09-28 01:56:35.948424

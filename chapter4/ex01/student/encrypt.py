@@ -20,7 +20,7 @@ for character in message:
 
     # Get the ASCII value and shift it
     code = ord(character)
-    new_code = 32 + ((code - 32 + distance) % 95)
+    new_code = (code + distance) % 128
 
     # Convert the new value back to a character
     encrypted_character = chr(new_code)
