@@ -1,11 +1,3 @@
-"""
-Program: numberlines.py
-Author: Reggie
-
-This program reads a source file and copies its
-contents to another file with numbered lines.
-"""
-
 # Ask the user for the file names
 inputFile = input("Enter the input file name: ")
 outputFile = input("Enter the output file name: ")
