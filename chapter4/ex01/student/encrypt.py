@@ -16,7 +16,10 @@ encrypted = ""
 # Encrypt each character
 for char in message:
     code = ord(char)
-    newCode = (code + distance) % 127
+
+    # Shift characters within the printable ASCII range
+    newCode = 32 + ((code - 32 + distance) % 95)
+
     encrypted += chr(newCode)
 
 # Display the encrypted message
