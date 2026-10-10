@@ -1,16 +1,14 @@
 # Ask for the input file name
-filename = input("Enter the input file name: ")
+fileName = input("Enter the input file name: ")
 
-# Read the file and collect the unique words
-uniqueWords = set()
+# Open and read the file
+with open(fileName, "r") as file:
+    text = file.read()
 
-with open(filename, "r") as file:
-    for line in file:
-        words = line.split()
-
-        for word in words:
-            uniqueWords.add(word.lower().strip(".,!?;:\"'()[]{}"))
+# Get the unique words
+words = text.split()
+uniqueWords = set(words)
 
 # Print the words in alphabetical order
-for word in sorted(uniqueWords):
-    print(word)
+for word in sorted(uniqueWords, key=str.lower):
+    print(word.title())
