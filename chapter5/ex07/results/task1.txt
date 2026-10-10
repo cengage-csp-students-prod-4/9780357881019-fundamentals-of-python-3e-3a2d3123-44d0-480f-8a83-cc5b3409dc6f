@@ -3,20 +3,10 @@ Status: PASSED!
 Check: 1
 Test: Program outputs words in correct order.
 Reason: The program's output contained the correct values in the correct order.None
-Timestamp: 2026-10-10 22:47:06.028605
+Timestamp: 2026-10-10 22:49:17.668786
 
-Status: FAILED!
+Status: PASSED!
 Check: 2
 Test: Program outputs words in correct order.
-Reason: Unable to find '['brown dog fox jumps lazy over quick the']' in the program's output.
-Enter the input file name: Brown
-Dog
-Fox
-Jumps
-Lazy
-Over
-Quick
-The
-.
-Error : AssertionError - 
-Timestamp: 2026-10-10 22:47:06.044570
+Reason: The program's output contained the correct values in the correct order.None
+Timestamp: 2026-10-10 22:49:17.684247

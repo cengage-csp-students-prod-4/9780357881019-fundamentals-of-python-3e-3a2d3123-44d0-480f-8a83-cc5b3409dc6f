@@ -11,4 +11,4 @@ uniqueWords = set(words)
 
 # Print the words in alphabetical order
 for word in sorted(uniqueWords, key=str.lower):
-    print(word.title())
+    print(word)
