@@ -1,30 +1,40 @@
+import turtle
 
-from turtle import Turtle
 
 def drawFractalLine(t, distance, angle, level):
-    """Draws one line of the Koch snowflake."""
     if level == 0:
+        # At level 0, draw one straight line.
         t.setheading(angle)
         t.forward(distance)
     else:
-        distance = distance / 3.0
-        drawFractalLine(t, distance, angle, level - 1)
-        drawFractalLine(t, distance, angle + 60, level - 1)
-        drawFractalLine(t, distance, angle - 60, level - 1)
-        drawFractalLine(t, distance, angle, level - 1)
+        # Replace this line with four shorter lines that form a bump.
+        third = distance / 3.0
+        drawFractalLine(t, third, angle, level - 1)
+        drawFractalLine(t, third, angle + 60, level - 1)
+        drawFractalLine(t, third, angle - 60, level - 1)
+        drawFractalLine(t, third, angle, level - 1)
+
 
 def main():
-    t = Turtle()
+    screen = turtle.Screen()
+    screen.setup(700, 600)
+
+    t = turtle.Turtle()
     t.speed(0)
+    t.penup()
+    t.goto(-100, 100)
+    t.pendown()
 
     distance = 200
     level = 2
 
-    for angle in (0, -120, 120):
-        drawFractalLine(t, distance, angle, level)
+    # Draw the snowflake's three sides.
+    drawFractalLine(t, distance, 0, level)
+    drawFractalLine(t, distance, -120, level)
+    drawFractalLine(t, distance, 120, level)
 
-    t.hideturtle()
-    t.getscreen().mainloop()
+    screen.exitonclick()
+
 
 if __name__ == "__main__":
     main()
